@@ -90,14 +90,14 @@ function App() {
         config: {
           iceServers: [
             {
-              urls: "stun:as",
-              username: "as",
-              credential: "123456789",
+              urls: "stun:numb.viagenie.ca",
+              username: "anas_abouali@um5.ac.ma",
+              credential: "anasabouali",
             },
             {
-              urls: "turn:as",
-              username: "cas",
-              credential: "123456789",
+              urls: "turn:numb.viagenie.ca",
+              username: "anas_abouali@um5.ac.ma",
+              credential: "anasabouali",
             },
           ],
         },
