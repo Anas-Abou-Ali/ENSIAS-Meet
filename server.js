@@ -6,9 +6,12 @@ const server = http.createServer(app);
 const socket = require("socket.io");
 const io = socket(server);
 const path = require("path");
+const { AwakeHeroku } = require("awake-heroku");
 const _ = require("lodash");
 
-
+AwakeHeroku.add({
+  url: "https://ensias-meet.herokuapp.com",
+});
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 app.use(express.static("./client/build"));
